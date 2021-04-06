@@ -8,7 +8,7 @@ person = input("Person's Name: ")
 # print("subscribe to {}".format(youtuber))
 # print(f"subscribe to {youtuber}")
 
-madlib = f"Computer programming is so {adj}! It makes me very {adj2}  \
+madlib = f"Computer programming is so {adj}! It makes me very {adj2}
   because I love to {verb}. Stay positive and {verb2} like {person}"
 
 print(madlib)
