@@ -1,3 +1,4 @@
+# tutorial of kying18
 import random
 
 def play():
@@ -6,7 +7,7 @@ def play():
 
     if user == computer:
       return 'It\'s a tie'
-
+    
     if is_win(user,computer):
       return 'You won!'
 

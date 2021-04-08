@@ -1,3 +1,4 @@
+# tutorial of kying18
 import random
 
 def guess(x):

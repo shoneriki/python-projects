@@ -1,3 +1,4 @@
+# tutorial of kying18
 adj = input("Adjective: ")
 adj2 = input("Another Adjective: ")
 verb = input("Verb: ")
