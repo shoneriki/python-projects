@@ -1,6 +1,7 @@
 # tutorial of  kying18
 import random
 from words import words
+from visual import lives_visual_dict
 import string
 
 def get_valid_word(words):
@@ -16,7 +17,7 @@ def hangman():
   alphabet = set(string.ascii_uppercase)
   used_letters = set()
 
-  lives = 5
+  lives = 7
 
   while len(word_letters) > 0 and lives > 0:
     # letters used
@@ -25,6 +26,7 @@ def hangman():
 
     # what current word is (ie W - A T)
     word_list = [letter if letter in used_letters else '-' for letter in word]
+    print(lives_visual_dict[lives])
     print('Current word: ', ' '.join(word_list))
 
     user_letter = input('Guess a letter: ').upper()
@@ -45,6 +47,7 @@ def hangman():
       print('Invalid character. Try again.')
 
   if lives == 0:
+    print(lives_visual_dict[lives])
     print('You died. The word was', word)
   else:
     print('Great! You guessed the word', word, '!!')
