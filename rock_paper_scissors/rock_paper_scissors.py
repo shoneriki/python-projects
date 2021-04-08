@@ -1,16 +1,16 @@
 import random
 
 def play():
-  user = input("please choose r(rock), s(scissors), or p(paper): ")
-  computer = random.choice(['r','p', 's'])
+    user = input("Please choose r(rock), s(scissors) or p(paper):\n ")
+    computer = random.choice(['r','p', 's'])
 
-  if user == computer:
-    return 'It\'s a tie'
+    if user == computer:
+      return 'It\'s a tie'
 
-  if is_win(user,computer):
-    return 'You won!'
+    if is_win(user,computer):
+      return 'You won!'
 
-  return 'You Lost!!'
+    return 'You Lost!!'
 
 def is_win(player, opponent):
   if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') or ( player == 'p' and opponent == 'r'):
